@@ -1,15 +1,23 @@
 /* https://coolors.co/palette/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
 body {
   max-width: 1200px;
   margin: auto;
   background-color: #ffe8d6;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
   background-color: #6b705c;
   color: #ffe8d6;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 header img {
   width: 100px;
@@ -29,6 +37,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 nav li {
   list-style: none;
