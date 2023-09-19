@@ -82,6 +82,17 @@ section li {
   list-style: none;
   /* padding: 10px; */
 }
+
+section li a {
+  color: black;
+  /* text-decoration: none; */
+}
+section li a:hover {
+  color: black;
+  background-color:  #b7b7a4;
+}
+
+
 .card {
   display: flex;
   flex-direction: column;
