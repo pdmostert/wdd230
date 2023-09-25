@@ -10,7 +10,8 @@
 
     <meta property="og:title" content="Peter Mostert - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/City_Hall_Oxford_Street.jpg/640px-City_Hall_Oxford_Street.jpg">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/City_Hall_Oxford_Street.jpg/640px-City_Hall_Oxford_Street.jpg">
     <meta property="og:url" content="https://petermostert.github.io/wdd230/">
 
     <title>Peter Mostert - WDD 230 - Web Frontend Development</title>
@@ -27,13 +28,14 @@
         <h1>Peter Mostert</h1>
     </header>
 
+    <a id="menu" href="#"></a>
     <nav>
-        <ul>
-            <li><a href="#l">Home</a></li>
-            <li><a href="lesson01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng&id=p10-p17#p10"
+        <ul class="navigation">
+            <li><a class="nav-link" href="#" class="active">Home</a></li>
+            <li><a class="nav-link" href="lesson01/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+            <li><a class="nav-link" href="chamber/" target="_blank">Chamber</a></li>
+            <li><a class="nav-link" href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a class="nav-link" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng&id=p10-p17#p10"
                     target="_blank">Scripture</a></li>
         </ul>
     </nav>
@@ -44,9 +46,15 @@
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li>01: <a href="lesson01/holygrail.html" target="_blank">Holy Layout</a> <span> | </span> <a href="lesson01/media-query.html" target="_blank">Media Query</a></li>
-                <li>02: <a href="lesson2/design.html" target="_blank">Design</a> <span> | </span><a href="lesson2/design-principles.html" target="_blank">Design Principles Document</a></li>
-                <li>03: <a href="lesson3/images/combinators.png" target="_blank">Css Combinators</a><span> | </span><a href="https://codepen.io/Peter-Mostert/pen/xxmYPmz" target="_blank">CSS Pseudo-elements</a> <span> | </span><a href="https://codepen.io/Peter-Mostert/pen/xxmYpGy" target="_blank">Responsive "Hamburger" Menu</a></li>
+                <li>01: <a href="lesson01/holygrail.html" target="_blank">Holy Layout</a> <span> | </span> <a
+                        href="lesson01/media-query.html" target="_blank">Media Query</a></li>
+                <li>02: <a href="lesson2/design.html" target="_blank">Design</a> <span> | </span><a
+                        href="lesson2/design-principles.html" target="_blank">Design Principles Document</a></li>
+                <li>03: <a href="lesson3/images/combinators.png" target="_blank">Css Combinators</a><span> | </span><a
+                        href="https://codepen.io/Peter-Mostert/pen/xxmYPmz" target="_blank">CSS Pseudo-elements</a>
+                    <span> | </span><a href="https://codepen.io/Peter-Mostert/pen/xxmYpGy" target="_blank">Responsive
+                        "Hamburger" Menu</a>
+                </li>
                 <li>04: <a href=""></a><span></span><a></a></li>
                 <li>05: <a></a><span></span><a></a></li>
                 <li>06: <a></a><span></span><a></a></li>
@@ -60,6 +68,8 @@
             <p>Page Visits : </p>
 
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31155.5959776747!2d27.898928474048382!3d-32.98958977732904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695633037398!5m2!1sen!2sza"
+             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </main>
 
@@ -69,6 +79,7 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

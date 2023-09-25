@@ -37,6 +37,7 @@ main {
   display: grid;
   margin: auto;
   max-width: 1200px;
+  /* min-width: 400px; */
   padding: 20px;
   grid-template-columns: 1fr 10fr 1fr;
 }
@@ -44,19 +45,21 @@ main h2 {
   grid-column: 1/4;
   text-align: center;
 }
-ul {
-  padding-inline-start: 0%;
+section ul {
+padding-left: 15px;
+padding-right: 15px;
+  /* padding-inline-start: 0%; */
 }
 
-section {
+section, iframe {
   grid-column: 2/3;
 }
 
+iframe{
+  width: 98%;
+}
+
 nav {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
   margin: 0 auto;
   width: 100%;
   font-family: "Playfair Display", serif;
@@ -77,6 +80,9 @@ nav li a {
 nav a:hover {
   background-color: #ddbea9;
 }
+nav ul{
+  padding-left: 0;
+}
 
 section li {
   list-style: none;
@@ -93,7 +99,7 @@ section li a:hover {
 }
 
 
-.card {
+.card, iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,4 +126,51 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;
+}
+/* Css wayfinder*/
+.active::before {
+  content: "👉";
+  padding-right: 10px;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	/* background-color: #eee; */
+	color: #000;
+	position:absolute;
+	top:1rem;
+	right:1rem;
+}
+#menu:hover {
+  background-color: #ffe8d6;
+  border-radius: 10%;
+}
+
+/* Show hamburger for menu*/
+#menu::before {
+	content: "≡";
+}
+
+/* show x when menu is active */
+#menu.show::before {
+	content: "X";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	/* max-width: 760px; */
+}
+
+/* hide the navigation by default mobile view */
+.navigation li {
+	display: none;
+}
+/* show the navigation when the menu is checked */
+.show li {
+	display: block;
 }
