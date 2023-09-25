@@ -39,25 +39,29 @@ main {
   max-width: 1200px;
   /* min-width: 400px; */
   padding: 20px;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: 5px 1fr 5px;
+  /* column-gap: 20px; */
+  row-gap: 20px;
 }
+
 main h2 {
   grid-column: 1/4;
   text-align: center;
 }
 section ul {
-padding-left: 15px;
-padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* padding-inline-start: 0%; */
 }
 
-section, iframe {
+section,
+iframe {
   grid-column: 2/3;
 }
 
-iframe{
+/* iframe{
   width: 98%;
-}
+} */
 
 nav {
   margin: 0 auto;
@@ -80,7 +84,7 @@ nav li a {
 nav a:hover {
   background-color: #ddbea9;
 }
-nav ul{
+nav ul {
   padding-left: 0;
 }
 
@@ -95,20 +99,20 @@ section li a {
 }
 section li a:hover {
   color: black;
-  background-color:  #b7b7a4;
+  background-color: #b7b7a4;
 }
 
-
-.card, iframe {
+.card,
+iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   height: 300px;
   background-color: #ddbea9;
   border-radius: 10px;
-  margin: 10px;
+  /* margin: 10px; */
   /* padding: 10px; */
 }
 .card h3 {
@@ -134,16 +138,16 @@ footer {
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	/* background-color: #eee; */
-	color: #000;
-	position:absolute;
-	top:1rem;
-	right:1rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  /* background-color: #eee; */
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 #menu:hover {
   background-color: #ffe8d6;
@@ -152,25 +156,25 @@ footer {
 
 /* Show hamburger for menu*/
 #menu::before {
-	content: "≡";
+  content: "≡";
 }
 
 /* show x when menu is active */
 #menu.show::before {
-	content: "X";
+  content: "X";
 }
 
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	/* max-width: 760px; */
+  list-style: none;
+  margin: 0 auto;
+  /* max-width: 760px; */
 }
 
 /* hide the navigation by default mobile view */
 .navigation li {
-	display: none;
+  display: none;
 }
 /* show the navigation when the menu is checked */
 .show li {
-	display: block;
+  display: block;
 }
