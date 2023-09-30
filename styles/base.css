@@ -138,6 +138,7 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;
+  font-size: 0.9rem;
 }
 /* Css wayfinder*/
 .active::before {
@@ -150,8 +151,9 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.3rem 0.75rem;
   /* background-color: #eee; */
+  border: 0.5px solid #000;
   color: #000;
   position: absolute;
   top: 1rem;
@@ -159,7 +161,7 @@ footer {
 }
 #menu:hover {
   background-color: #ffe8d6;
-  border-radius: 10%;
+  /* border-radius: 10%; */
 }
 
 /* Show hamburger for menu*/
