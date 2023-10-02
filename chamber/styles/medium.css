@@ -1,10 +1,30 @@
 @media screen and (min-width: 640px) and (max-width: 1199px) {
-    
+  main :nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer :nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 
-    main :nth-child(6){
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
 
 
 }

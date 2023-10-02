@@ -13,6 +13,7 @@
 
 body {
   margin: auto;
+
 }
 
 header {
@@ -24,6 +25,16 @@ header {
   font-family: var(--heading-font);
   font-weight: 700;
   width: 100%;
+}
+header h1{
+  margin-right: 70px;
+}
+header img{
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+
+  margin-right: 20px;
 }
 
 nav {
@@ -85,9 +96,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.card> h3 {
+.card > h3 {
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
@@ -101,23 +110,96 @@ p {
   padding-right: 10px;
 }
 
-.spotlight-cont{
+.spotlight-cont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-
 }
-.spotlight-cont :nth-child(1){
+.spotlight-cont :nth-child(1) {
   grid-column-start: 1;
   grid-column-end: -1;
 }
-.spotlight{
+.spotlight {
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.spotlight a{
+.spotlight a {
   text-decoration: none;
   color: black;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+footer img {
+  margin-left: 20px;
+
+  float: left;
+  border: 1px solid white;
+  width: 48px;
+  height: 48px;
+}
+
+footer div {
+  margin-bottom: 20px;
+}
+
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  /* background-color: #eee; */
+  border: 0.5px solid white;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#menu:hover {
+  background-color: var(--accent3-color);
+  /* border-radius: 10%; */
+}
+
+/* Show hamburger for menu*/
+#menu::before {
+  content: "≡";
+}
+
+/* show x when menu is active */
+#menu.show::before {
+  content: "X";
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  /* max-width: 760px; */
+}
+
+/* hide the navigation by default mobile view */
+.navigation li {
+  display: none;
+}
+/* show the navigation when the menu is checked */
+.show li {
+  display: block;
 }
