@@ -76,13 +76,18 @@ main {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
   background-color: #ddbea9;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.card h3 {
+
+
+
+.card> h3 {
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
@@ -90,4 +95,25 @@ main {
   text-align: center;
   border-radius: 10px 10px 0 0;
   padding: 10px 0 10px 0;
+}
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.spotlight-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+
+}
+.spotlight-cont :nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.spotlight{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

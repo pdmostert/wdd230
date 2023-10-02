@@ -1,0 +1,10 @@
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+    
+
+    main :nth-child(6){
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+
+}
