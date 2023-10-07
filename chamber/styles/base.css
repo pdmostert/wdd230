@@ -255,3 +255,23 @@ footer div {
 .show li {
   display: block;
 }
+
+button {
+  /* position: absolute;
+  left: 1rem;
+  top: 1rem; */
+  background-color: var(--accent3-color);
+  color: white;
+  border: 1px solid var(--accent3-color);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  /* color: white; */
+}
