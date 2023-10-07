@@ -2,11 +2,17 @@
   main {
     max-width: 1200px;
   }
+ 
 
-  main :nth-child(6) {
-    grid-column-start: 1;
-    grid-column-end: -1;
+  .logo {
+    width: 60px;
+    height: 60px;
   }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
 
   .spotlight-cont {
     display: grid;
@@ -15,6 +21,9 @@
 
   footer {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer :nth-child(3) {
+    grid-column-start: 3;
   }
 
   .navigation {
@@ -32,6 +41,7 @@
     display: none;
   }
 
-
-
+  #company-info {
+    grid-template-columns: 1fr 1fr;
+  }
 }

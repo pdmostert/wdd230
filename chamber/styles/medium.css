@@ -1,8 +1,23 @@
-@media screen and (min-width: 640px) and (max-width: 1199px) {
-  main :nth-child(6) {
+@media screen and (min-width: 640px) {
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+
+  main :nth-child(5) {
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
+  .hero-label {
+    bottom: 30px;
+    left: 30px;
+    font-size: 1.5em;
+  }
+
   footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -26,5 +41,7 @@
     display: none;
   }
 
-
+  #company-info {
+    grid-template-columns: 1fr 2fr;
+  }
 }

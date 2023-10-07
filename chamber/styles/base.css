@@ -13,7 +13,6 @@
 
 body {
   margin: auto;
-
 }
 
 header {
@@ -25,16 +24,19 @@ header {
   font-family: var(--heading-font);
   font-weight: 700;
   width: 100%;
+  min-height: 5rem;
 }
-header h1{
-  margin-right: 70px;
+header h1 {
+  font-size: 1.5em;
 }
-header img{
-  margin-left: 10px;
-  width: 60px;
-  height: 60px;
 
-  margin-right: 20px;
+.logo {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 nav {
@@ -74,12 +76,29 @@ main {
 }
 
 .hero-box {
+  position: relative;
   margin: auto;
   grid-column-start: 1;
   grid-column-end: -1;
 }
+.hero-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--accent3-color);
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0 10px 0 10px;
+}
+.hero-label:hover {
+  background-color: var(--primary-color);
+}
 
 .hero-box img {
+  object-fit: cover;
+
   width: 100%;
   height: auto;
 }
@@ -91,23 +110,35 @@ main {
   align-items: center;
   width: 100%;
   min-height: 200px;
-  background-color: #ddbea9;
+  background: linear-gradient(#fff, rgba(250, 187, 62, 0.719));
+  border: 1px solid rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .card > h3 {
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
-  background-color: #b7b7a4;
+  color: white;
+  background-color: var(--accent3-color);
   text-align: center;
   border-radius: 10px 10px 0 0;
   padding: 10px 0 10px 0;
 }
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 p {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .spotlight-cont {
@@ -122,7 +153,8 @@ p {
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 .spotlight a {
   text-decoration: none;
@@ -147,19 +179,39 @@ footer p {
   margin-bottom: 5px;
 }
 
-footer img {
+/* footer img {
   margin-left: 20px;
-
   float: left;
   border: 1px solid white;
   width: 48px;
   height: 48px;
+} */
+
+#company-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#company-info h3 {
+  padding-left: 10px;
+  justify-self: left;
+  text-align: left;
+  grid-column: 2/3;
+}
+
+#company-info img {
+  justify-self: right;
+  align-self: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#company-info p {
+  justify-self: left;
+  grid-column: 2/3;
 }
 
 footer div {
   margin-bottom: 20px;
 }
-
 
 #menu {
   display: block;
