@@ -25,15 +25,19 @@
     <header>
         <img class="logo" src="images/logo-c.png" alt="Logo Image">
         <h1>Border-Kei Chamber of Commerce</h1>
+        <label class="switch" title="Dark Mode">
+            <input type="checkbox" onclick="DarkMode()">
+            <span class="slider round"></span>
+        </label>
     </header>
     <nav>
-        <a id="menu" href="#"></a>
+        <a id="menu" href="#" title="Menu"></a>
+        <!-- <button onclick="DarkMode()">Dark Mode</button> -->
         <ul class="navigation">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#" class="nav-link">Discover</a></li>
             <li><a href="#" class="nav-link">Directory</a></li>
             <li><a href="#" class="nav-link">Join</a></li>
-            <button onclick="DarkMode()">Dark Mode</button>
         </ul>
     </nav>
     <!-- main>div.hero-box+section*5>figure+h2+p -->
