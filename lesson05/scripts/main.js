@@ -8,6 +8,7 @@ button.addEventListener("click", () => {
     const btn = document.createElement("button");
     listItem.textContent = input.value;
     btn.textContent = "❌";
+    btn.ariaLabel = `Remove ${input.value}`;
     btn.addEventListener("click", () => {
       listItem.remove();
       input.focus();
