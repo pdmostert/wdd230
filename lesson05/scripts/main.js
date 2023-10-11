@@ -18,3 +18,10 @@ button.addEventListener("click", () => {
   input.focus();
   input.value = "";
 });
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    button.click();
+  }
+});
