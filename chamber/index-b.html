@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Border-Kei Chamber of Commerce Website">
+    <meta name="author" content="Peter Mostert">
+    <meta name="keywords" content="Border-Kei, East London, Chamber of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Border-Kei Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdmostert.github.io/wdd230/chamber/images/east-cape.jpg">
+    <meta property="og:url" content="https://pdmostert.github.io/wdd230/chamber/">
+
+    <title>Border-Kei Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo-b.png" alt="Logo Image">
+        <h1>Border-Kei Chamber of Commerce</h1>
+        <label class="switch" title="Dark Mode">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <a id="menu" href="#" title="Menu"></a>
+        <!-- <button onclick="DarkMode()">Dark Mode</button> -->
+        <ul class="navigation">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Discover</a></li>
+            <li><a href="#" class="nav-link">Directory</a></li>
+            <li><a href="#" class="nav-link">Join</a></li>
+        </ul>
+    </nav>
+    <!-- main>div.hero-box+section*5>figure+h2+p -->
+
+    <main class="home">
+        <div class="hero-box">
+            <img src="images/hero-a.jpg" alt="Hero Image">
+            <a class="hero-label" href="#">Join Now</a>
+        </div>
+        <section class="card">
+            <h3>Current Events</h3>
+            <figure><img src="images/current-event.jpg" alt="image" > </figure>
+            <p>Good afternoon Members, the Agriculture Committee of the Chamber invites you to attend the inaugural
+                Organic Food Market happening next week Saturday, 14th October, as per the details in the advert below.
+                Please do join us & support this initiative. For any other queries pertaining to this event or to book a
+                stall, please call 0828723150. Thank you.</p>
+        </section>
+        <section class="card">
+            <h3>Call to Action</h3>
+            <figure><img src="images/call-two-action.png" alt="image"> </figure>
+            <p><strong>Coke Cleans E.L Beachfront</strong></p>
+            <p>Posted on September 18, 2017 by Yanga Ziwele</p>
+            <p>On Friday 15 September Coca Cola Beverages South Africa (CCBSA) cleaned up the East London Beachfront as
+                one of their Corporate Social Investment initiatives.</p>
+            <p>Over 100 CCBSA employees, joined by Call2Action, the Department of Environmental Affairs, and the Buffalo
+                City Municipality, cleaned up the face of the city just a day before International Coastal Cleanup day,
+                which takes place on the third Saturday of September every year.</p>
+            <p>The cleanup started off at popular braai-spot, Ebuhlanti in the Quigney, and went up the Esplanade, to as
+                far as the Orient theatre.</p>
+        </section>
+        <section class="card">
+            <h3>Weather</h3>
+            <figure><img src="images/partly-cloudy.webp" alt="image"> </figure>
+            <p>🌞 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium officiis, exercitationem
+                quidem magni totam recusandae modi quasi reprehenderit ea dolore nostrum quo dicta cum dignissimos quis
+                eum explicabo nobis?</p>
+        </section>
+        <!-- <section class="card">
+            <h3>Social</h3>
+            <figure><img src="#" alt="image"> </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis veniam eligendi quas doloremque
+                labore natus est odit dolorem maiores commodi eveniet illo ab sequi necessitatibus, blanditiis maxime
+                facilis saepe!</p>
+        </section> -->
+        <section class="card spotlight-cont">
+            <h3>Member Spotlight</h3>
+            <section class="spotlight">
+                <h3>Company Name</h3>
+                <p>Slogan</p>
+                <a href="#">Links</a>
+            </section>
+            <section class="spotlight">
+                <h3>Company Name</h3>
+                <p>Slogan</p>
+                <a href="#">Links</a>
+            </section>
+            <section class="spotlight">
+                <h3>Company Name</h3>
+                <p>Slogan</p>
+                <a href="#">Links</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div id="company-info">
+            <img class="logo" src="images/logo-b.png" alt="Logo Image">
+            <h3>Border-Kei Chamber of Commerce</h3>
+            <p>PO Box 12345</p>
+            <p>East London</p>
+            <p>5200</p>
+        </div>
+        <div>
+            <p>communications@bkcob.co.za</p>
+            <p>+27(0)43 743 8438</p>
+            <p>📍 Location Map</p>
+        </div>
+        <div>
+            <p>&copy;2023</p>
+            <p>Peter Mostert</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/utils.js"></script>
+</body>
+
+</html>

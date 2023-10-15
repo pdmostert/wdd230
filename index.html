@@ -24,7 +24,7 @@
 <body>
 
     <header>
-        <img src="images/peter.jpg" alt="Peter Mostert">
+        <img src="images/peter.webp" alt="Peter Mostert">
         <h1>Peter Mostert</h1>
     </header>
 
@@ -42,7 +42,19 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px )" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="Salt Lake City Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Salt Lake City Temple</p>
+            </div>
+        </div>
+
+
         <h2>WDD 230: Web Frontend Development</h2>
+
 
         <section class="card">
             <h3>Learning Activities</h3>
@@ -62,8 +74,12 @@
                     <span> | </span>
                     <a href="#"></a>
                 </li>
-                <li>05: <a href="lesson05/bom.html" target="_blank">Book of Mormon Top 10</a><span> | </span><a></a></li>
-                <li>06: <a></a><span></span><a></a></li>
+                <li>05: <a href="lesson05/bom.html" target="_blank">Book of Mormon Top 10</a></li>
+
+                <li>06: <a href="/lesson06/images/landscape.webp" target="_blank">WebP</a>
+                    <span> | </span>
+                    <a href="lesson06/responsive-images.html" target="_blank">Responsive Images</a>
+                </li>
                 <li>07: <a></a><span></span><a></a></li>
             </ul>
         </section>
@@ -75,7 +91,7 @@
             <p>Page Visits : 15 </p>
 
         </section>
-        <iframe width="1200" height="300" 
+        <iframe width="1200" height="300"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31155.5959776747!2d27.898928474048382!3d-32.98958977732904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695633037398!5m2!1sen!2sza"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
