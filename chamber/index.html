@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <img class="logo" src="images/logo-c.png" alt="Logo Image">
+        <img class="logo" src="images/logo.webp" alt="Logo Image">
         <h1>Border-Kei Chamber of Commerce</h1>
         <label class="switch" title="Dark Mode">
             <input type="checkbox">
@@ -44,12 +44,17 @@
 
     <main class="home">
         <div class="hero-box">
-            <img src="images/hero-b.jpg" alt="Hero Image">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Hero Image" width="1500" height="500">
+            </picture>
             <a class="hero-label" href="#">Join Now</a>
+            <div class="overlay"></div>
         </div>
         <section class="card">
             <h3>Current Events</h3>
-            <figure><img src="images/current-event.jpg" alt="image"> </figure>
+            <figure><img src="images/current-event.webp" alt="image"> </figure>
             <p>Good afternoon Members, the Agriculture Committee of the Chamber invites you to attend the inaugural
                 Organic Food Market happening next week Saturday, 14th October, as per the details in the advert below.
                 Please do join us & support this initiative. For any other queries pertaining to this event or to book a
@@ -57,7 +62,7 @@
         </section>
         <section class="card">
             <h3>Call to Action</h3>
-            <figure><img src="images/call-two-action.png" alt="image"> </figure>
+            <figure><img src="images/call-two-action.webp" alt="image"> </figure>
             <p><strong>Coke Cleans E.L Beachfront</strong></p>
             <p>Posted on September 18, 2017 by Yanga Ziwele</p>
             <p>On Friday 15 September Coca Cola Beverages South Africa (CCBSA) cleaned up the East London Beachfront as
@@ -71,6 +76,9 @@
         <section class="card">
             <h3>Weather</h3>
             <figure><img src="images/partly-cloudy.webp" alt="image"> </figure>
+            <p>Temperature: <span id="temperature">25</span> °C</p>
+            <p>Wind Speed: <span id="wind-speed">3</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill"></span> °C</p>
             <p>🌞 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium officiis, exercitationem
                 quidem magni totam recusandae modi quasi reprehenderit ea dolore nostrum quo dicta cum dignissimos quis
                 eum explicabo nobis?</p>
@@ -103,7 +111,7 @@
     </main>
     <footer>
         <div id="company-info">
-            <img class="logo" src="images/logo-c.png" alt="Logo Image">
+            <img class="logo" src="images/logo.webp" alt="Logo Image">
             <h3>Border-Kei Chamber of Commerce</h3>
             <p>PO Box 12345</p>
             <p>East London</p>
@@ -124,6 +132,7 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/utils.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

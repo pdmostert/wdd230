@@ -94,6 +94,7 @@ main {
   font-weight: 700;
   border-radius: 0 10px 0 10px;
 }
+
 .hero-label:hover {
   background-color: var(--primary-color);
 }
@@ -103,6 +104,21 @@ main {
 
   width: 100%;
   height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.overlay::after {
+  content: "Small";
+  font-size: 1rem;
+  color: white;
+  background-color: var(--accent3-color);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .card {
