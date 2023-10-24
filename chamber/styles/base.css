@@ -76,14 +76,59 @@ nav ul {
 }
 
 main {
-  display: grid;
-  margin: auto;
   max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+#home {
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
   column-gap: 20px;
   row-gap: 20px;
+}
+
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.left-sidebar {
+  background-color: var(--accent3-color);
+  color: white;
+  padding: 10px 15px 15px 15px;
+  border: 1px solid white;
+}
+
+.left-sidebar a {
+  color: white;
+  /* text-decoration: none; */
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.content figure {
+  position: relative;
+}
+.content figcaption {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  background-color: var(--accent3-color);
+  color: white;
   padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0 10px 0 10px;
+  border: 1px solid white;
 }
 
 .hero-box {

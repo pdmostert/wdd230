@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Border-Kei Chamber of Commerce Website">
+    <meta name="author" content="Peter Mostert">
+    <meta name="keywords" content="Border-Kei, East London, Chamber of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Border-Kei Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdmostert.github.io/wdd230/chamber/images/east-cape.jpg">
+    <meta property="og:url" content="https://pdmostert.github.io/wdd230/chamber/">
+
+    <title>Border-Kei Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Logo Image" width="319" height="314">
+        <h1>Border-Kei Chamber of Commerce</h1>
+        <label class="switch" title="Dark Mode">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <a id="menu" href="#" title="Menu"></a>
+        <!-- <button onclick="DarkMode()">Dark Mode</button> -->
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="discover.html" class="nav-link">Discover</a></li>
+            <li><a href="#" class="nav-link">Directory</a></li>
+            <li><a href="#" class="nav-link">Join</a></li>
+        </ul>
+    </nav>
+    <!-- main>div.hero-box+section*5>figure+h2+p -->
+
+    <main class="discover">
+        <div class="left-sidebar">
+            <section>
+                <h3>Last Visit</h3>
+                <p id="last-visit"></p>
+            </section>
+            <section>
+                <h3>Population (2011)</h3>
+                <p>City: <span>267 007</span></p>
+                <p>Density: <span>1,600/km²</span></p>
+                <p>Metro: <span>755 200</span></p>
+                <p>Density: <span>300/km²</span></p>
+            </section>
+            <section>
+                <h3>Community Resources</h3>
+                <p>Schools: Selborn Collage, Hudson Part, George Randal, Merryfield </p>
+                <p>Universities: <a href="https://www.ufh.ac.za/" target="_blank">University of Fort Hare</a>, <a
+                        href="https://www.wsu.ac.za/" target="_blank">Walter Sisulu University</a></p>
+            </section>
+            <section>
+                <h3>Business Support and Development:</h3>
+                <a href="https://www.elidzstp.co.za/">Science & Technology Park</a>
+            </section>
+            <div>Calendar</div>
+        </div>
+        <div class="content">
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/city-hall-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/city-hall-medium.webp">
+                    <img src="images/city-hall-large.webp" alt="East London City Hall" width="1200" height="800">
+                </picture>
+                <figcaption>East London City Hall</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/cbd01-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/cbd01-medium.webp">
+                    <img src="images/cbd01-large.webp" alt="East London Central Business District" width="1200"
+                        height="800" loading="lazy">
+                </picture>
+                <figcaption>East London Central Business District - North View</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/cbd02-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/cbd02-medium.webp">
+                    <img src="images/cbd02-large.webp" alt="East London Central Business District" width="1200"
+                        height="800" loading="lazy">
+                </picture>
+                <figcaption>East London Central Business District - South View</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/farming-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/farming-medium.webp">
+                    <img src="images/farming-large.webp" alt="Farming" width="1200" height="800" loading="lazy">
+                </picture>
+                <figcaption>Many Farming Opportunities</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/beach-front-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/beach-front-medium.webp">
+                    <img src="images/beach-front-large.webp" alt="East London Beach Front" width="1200" height="800"
+                        loading="lazy">
+                </picture>
+                <figcaption>East London Beach Front</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/golf-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/golf-medium.webp">
+                    <img src="images/golf-large.webp" alt="Golfing" width="1200" height="800" loading="lazy">
+                </picture>
+                <figcaption>Play golf on one of our many Golf Estates</figcaption>
+            </figure>
+
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <div id="company-info">
+            <img class="logo" src="images/logo.webp" alt="Logo Image" width="319" height="314">
+            <h3>Border-Kei Chamber of Commerce</h3>
+            <p>PO Box 12345</p>
+            <p>East London</p>
+            <p>5200</p>
+        </div>
+        <div>
+            <p>communications@bkcob.co.za</p>
+            <p>+27(0)43 743 8438</p>
+            <p>📍 Location Map</p>
+        </div>
+        <div>
+            <p>&copy;2023</p>
+            <p>Peter Mostert</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/utils.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+</body>
+
+</html>
