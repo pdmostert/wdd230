@@ -348,6 +348,15 @@ button {
   /* color: white; */
 }
 
+.darkmode-label {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: absolute;
