@@ -3,6 +3,19 @@
     max-width: 1200px;
   }
 
+  .discover {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "lsb main main";
+  }
+
+  .left-sidebar {
+    grid-area: lsb;
+    background-color: var(--accent3-color);
+    color: white;
+  }
+  .content {
+    grid-area: main;
+  }
 
   .logo {
     width: 60px;

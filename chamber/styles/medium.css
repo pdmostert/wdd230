@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 400px) {
   .logo {
     width: 45px;
     height: 45px;
@@ -23,19 +23,6 @@
     content: "Medium";
   }
 
-  .discover {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "lsb main main";
-  }
-
-  .left-sidebar {
-    grid-area: lsb;
-    background-color: var(--accent3-color);
-    color: white;
-  }
-  .content {
-    grid-area: main;
-  }
   .content img:hover {
     opacity: 0.6;
     transform: scale(1.1);
