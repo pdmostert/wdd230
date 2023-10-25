@@ -81,7 +81,7 @@ main {
   padding: 10px;
 }
 
-#home {
+.home {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -228,9 +228,17 @@ p {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
   background-color: white;
 }
+.spotlight h3 {
+  text-align: center;
+}
+
 .spotlight a {
+  padding-left: 15px;
   text-decoration: none;
   color: black;
+}
+.spotlight-cont p {
+  font-style: italic;
 }
 
 footer {
