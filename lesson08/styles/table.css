@@ -1,0 +1,58 @@
+:root {
+  --back:  hsla(0, 0%, 10%, 1);
+  --back2: hsla(0, 0%, 17%, 0.8);
+  --forelight: hsla(0, 0%, 100%, 1);
+  --border: hsla(0, 0%, 20%, 0.8);
+  --borderlight: hsla(0, 0%, 33%, 0.3);
+  --shadow: hsl(0, 0%, 50%);
+  --zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+  font-family: "EB Garamond", Arial, serif;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.85rem;
+}
+
+table {
+  margin: 10px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 10px var(--shadow);
+  border-collapse: collapse;
+}
+
+thead tr:first-child {
+	background-color: var(--back);
+	color: var(--forelight);
+    height: 3rem;
+}
+
+thead tr:nth-child(2) {
+    background-color: var(--back2);
+    color: var(--forelight);
+    height: 3rem;
+}
+
+thead th:first-child {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
