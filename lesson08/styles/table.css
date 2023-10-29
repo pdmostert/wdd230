@@ -1,5 +1,5 @@
 :root {
-  --back:  hsla(0, 0%, 10%, 1);
+  --back: hsla(0, 0%, 10%, 1);
   --back2: hsla(0, 0%, 17%, 0.8);
   --forelight: hsla(0, 0%, 100%, 1);
   --border: hsla(0, 0%, 20%, 0.8);
@@ -12,6 +12,10 @@ body {
   font-family: "EB Garamond", Arial, serif;
 }
 
+header {
+  text-align: center;
+  margin: 20px 0;
+}
 caption {
   padding: 10px;
   caption-side: bottom;
@@ -27,32 +31,32 @@ table {
 }
 
 thead tr:first-child {
-	background-color: var(--back);
-	color: var(--forelight);
-    height: 3rem;
+  background-color: var(--back);
+  color: var(--forelight);
+  height: 3rem;
 }
 
 thead tr:nth-child(2) {
-    background-color: var(--back2);
-    color: var(--forelight);
-    height: 3rem;
+  background-color: var(--back2);
+  color: var(--forelight);
+  height: 3rem;
 }
 
 thead th:first-child {
-    background-color: var(--back);
-    color: var(--forelight);
+  background-color: var(--back);
+  color: var(--forelight);
 }
 
-th, td {
-	padding: 7px 15px;
-	border: 1px solid var(--borderlight);
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
 }
 
 td {
-	text-align: center;
+  text-align: center;
 }
 
 tbody tr:nth-child(even) {
-    background-color: var(--zebra);
+  background-color: var(--zebra);
 }
-
