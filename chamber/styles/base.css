@@ -24,6 +24,8 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* ----------------- Header ------------- */
+
 header {
   position: relative;
   display: flex;
@@ -49,6 +51,8 @@ header h1 {
   height: 30px;
   margin-right: 10px;
 }
+
+/* ----------------- Navigation ------------- */
 
 nav {
   margin: 0 auto;
@@ -81,6 +85,7 @@ main {
   padding: 10px;
 }
 
+/* ----------------- Home Page ------------- */
 .home {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -88,6 +93,8 @@ main {
   column-gap: 20px;
   row-gap: 20px;
 }
+
+/* ----------------- Discover Page ------------- */
 
 .discover {
   display: grid;
@@ -181,7 +188,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 200px;
+  /* min-height: 200px; */
   background: linear-gradient(#fff, rgba(250, 187, 62, 0.719));
   border: 1px solid rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -241,6 +248,8 @@ p {
   font-style: italic;
 }
 
+/* ----------------- Footer ------------- */
+
 footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -257,6 +266,10 @@ footer {
 footer p {
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+footer div {
+  margin-bottom: 20px;
 }
 
 #company-info {
@@ -281,9 +294,7 @@ footer p {
   grid-column: 2/3;
 }
 
-footer div {
-  margin-bottom: 20px;
-}
+/* ----------------- Menu ------------- */
 
 #menu {
   display: block;
@@ -316,7 +327,6 @@ footer div {
 .navigation {
   list-style: none;
   margin: 0 auto;
-  /* max-width: 760px; */
 }
 
 /* hide the navigation by default mobile view */
@@ -329,9 +339,6 @@ footer div {
 }
 
 button {
-  /* position: absolute;
-  left: 1rem;
-  top: 1rem; */
   background-color: var(--accent3-color);
   color: white;
   border: 1px solid var(--accent3-color);
@@ -342,6 +349,8 @@ button {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* ----------------- Dark Mode & Slider ------------- */
 
 .dark-mode {
   background-color: black;
@@ -420,4 +429,124 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* ----------------- Join Page------------- */
+.join >div{
+  margin: 0 auto ;
+}
+
+.join {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  padding: 0 2rem;
+}
+.join h2 {
+  text-align: center;
+}
+
+.join form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25rem;
+
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+/* ----------------- Thank You Page------------- */
+.thankyou {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.thankyou .card p {
+  text-align: left;
+}
+
+/* ----------------- Forms------------- */
+
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  width: 100%;
+}
+
+form legend {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+  padding: 0;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 4px;
+}
+
+form label.top,
+form div {
+  display: block;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  color: var(--accent3-color);
+  font-size: 1rem;
+}
+form label.top input,
+form label.top textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 86%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent3-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+  align-self: center;
+}
+
+form input.submitBtn:hover {
+  background-color: var(--primary-color);
+}
+
+form label.top input:required {
+  border-left: red 6px solid;
+}
+form label.top input:required:valid {
+  border-left: green 6px solid;
+}
+
+form label.top input:focus,
+label.top textarea:focus {
+  box-shadow: 5px 5px 10px var(--secondary-color);
 }

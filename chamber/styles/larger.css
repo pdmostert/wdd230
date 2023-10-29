@@ -61,4 +61,15 @@
   #company-info {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* ----------------- Join Page------------- */
+
+  .join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    min-width: 390px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
 }

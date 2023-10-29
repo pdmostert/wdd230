@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Border-Kei Chamber of Commerce Website">
+    <meta name="author" content="Peter Mostert">
+    <meta name="keywords" content="Border-Kei, East London, Chamber of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Border-Kei Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdmostert.github.io/wdd230/chamber/images/east-cape.jpg">
+    <meta property="og:url" content="https://pdmostert.github.io/wdd230/chamber/">
+
+    <title>Border-Kei Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Logo Image" width="319" height="314">
+        <h1>Border-Kei Chamber of Commerce</h1>
+        <label for="darkmode" class="darkmode-label">Dark Mode</label>
+        <label class="switch" title="Dark Mode">
+            <input id="darkmode" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <a id="menu" href="#" title="Menu"></a>
+        <!-- <button onclick="DarkMode()">Dark Mode</button> -->
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="discover.html" class="nav-link">Discover</a></li>
+            <li><a href="#" class="nav-link">Directory</a></li>
+            <li><a href="join.html" class="nav-link">Join</a></li>
+        </ul>
+    </nav>
+    <!-- main>div.hero-box+section*5>figure+h2+p -->
+
+    <main class="join">
+        <div class="benefits">
+            <h2>Membership Benefits</h2>
+            <div class="card">
+                <p>Thank you for your interest in joining the Border-Kei Chamber of Commerce! Please select your
+                    preferred
+                    membership type
+                    from the options below and fill out the required information.</p>
+            </div>
+            <section class="card">
+                <h3>1. Nonprofit (NP) Membership:</h3>
+                <p>This membership type is for nonprofit organizations. There is no membership fee associated with this
+                    category. Nonprofit
+                    members enjoy essential benefits that foster community growth and collaboration.</p>
+            </section>
+            <section class="card">
+                <h3>2. Bronze Membership:</h3>
+                <p>Bronze members receive basic benefits to support their business needs. This membership level offers
+                    essential
+                    resources
+                    for networking and community engagement.</p>
+            </section>
+            <section class="card">
+                <h3>3. Silver Membership:</h3>
+                <p>Silver members enjoy enhanced benefits, including access to exclusive events and promotional
+                    opportunities.
+                    This
+                    membership level is designed for businesses seeking additional exposure and networking
+                    opportunities.</p>
+            </section>
+            <section class="card">
+                <h3>4. Gold Membership:</h3>
+                <p>Gold members receive premium benefits, including priority access to all Chamber events, personalized
+                    marketing support,
+                    and increased visibility within the community. Gold membership is ideal for businesses aiming for
+                    maximum
+                    exposure and
+                    growth.</p>
+            </section>
+        </div>
+        <div>
+            <h2>Membership Application Form</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required id="fname"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required id="lname"></label>
+                    <label class="top">Title or Position <input type="text" name="organization-title"
+                            pattern="[A-Za-z\- ]{7,}" id="title"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="name@yourcompany.co.za"
+                            required id="email"></label>
+                    <label class="top">Mobile Phone Number* <input type="tel" name="phone" required id="phone"></label>
+
+                    <div>Membership Level</div>
+                    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership is for non profit
+                        organizations and there is no fee</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business / Organization's Name* <input type="text" name="company" required
+                            id="company"></label>
+                    <label class="top">Description
+                        <textarea name="description" id="description" rows="4"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join Chamber" class="submitBtn">
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div id="company-info">
+            <img class="logo" src="images/logo.webp" alt="Logo Image" width="319" height="314">
+            <h3>Border-Kei Chamber of Commerce</h3>
+            <p>PO Box 12345</p>
+            <p>East London</p>
+            <p>5200</p>
+        </div>
+        <div>
+            <p>communications@bkcob.co.za</p>
+            <p>+27(0)43 743 8438</p>
+            <p>📍 Location Map</p>
+        </div>
+        <div>
+            <p>&copy;2023</p>
+            <p>Peter Mostert</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+
+</html>
