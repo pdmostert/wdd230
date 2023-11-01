@@ -18,7 +18,7 @@
     width: 100px;
   }
 
-  main {
+  .home {
     grid-template-columns: 5px 6fr 4fr 5px;
     justify-content: space-between;
     column-gap: 20px;
@@ -43,24 +43,24 @@
     font-family: "Great Vibes", serif;
   }
 
-  main h2 {
+  .home h2 {
     grid-column: 1/5;
   }
-  main :nth-child(2) {
+  .home :nth-child(2) {
     grid-column: 2/4;
     /* grid-row: 2/3; */
     margin-right: 10px;
   }
-  main :nth-child(3) {
+  .home :nth-child(3) {
     grid-column: 2/3;
     /* grid-row: 2/3; */
   }
-  main :nth-child(4) {
+  .home :nth-child(4) {
     grid-column: 3/4;
     /* grid-row: 3/4; */
     /* margin-left: 10px; */
   }
-  main :nth-child(5) {
+  .home :nth-child(5) {
     grid-column: 2/4;
     /* grid-row: 3/4; */
     /* margin-left: 10px; */

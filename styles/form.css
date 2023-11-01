@@ -1,0 +1,100 @@
+:root {
+  --btn-standard: #b7b7a4;
+  --btn-hover: #a17f35;
+  --input-valid: #ade5ad;
+  --input-invalid: #c97878;
+}
+
+/* ----------------- Form Page------------- */
+.form-page {
+  display: grid;
+  margin: auto;
+  max-width: 1200px;
+  padding: 10px;
+  grid-template-columns: 5px 1fr 5px;
+}
+.form-page form {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+form input:required{
+    border-left : 5px solid red;
+}
+
+#page-rating {
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#rangevalues {
+  display: flex;
+  width: 205px;
+}
+
+#rangevalues option {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 0;
+}
+
+#key:invalid,
+#email-input:invalid {
+  background-color: var(--input-invalid);
+}
+
+#key:valid,
+#email-input:valid {
+  background-color: var(--input-valid);
+}
+#message {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: red;
+  width: 12rem;
+}
+
+.submitBtn {
+  background-color: var(--btn-standard);
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px 10px 30px 0;
+  width: 12rem;
+}
+
+.submitBtn:hover {
+  background-color: var(--btn-hover);
+  box-shadow: 5px 5px 10px black;
+}
+
+/* ----------------- Record Page------------- */
+
+.record-page {
+  display: grid;
+  margin: auto;
+  max-width: 1200px;
+  padding: 10px;
+  grid-template-columns: 1fr ;
+}
+.record-page p{
+    text-align: center;
+}

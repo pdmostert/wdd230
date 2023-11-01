@@ -33,7 +33,7 @@ header h1 {
   padding: 50px 10px 10px 10px;
 }
 
-main {
+.home {
   display: grid;
   margin: auto;
   max-width: 1200px;
@@ -43,6 +43,9 @@ main {
   /* column-gap: 20px; */
   row-gap: 20px;
 }
+
+
+
 .hero {
   position: relative;
   grid-column: 2/-2;
