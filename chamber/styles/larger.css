@@ -3,6 +3,12 @@
     max-width: 1200px;
   }
 
+  /* ----------------- Home Page ------------- */
+
+  .home {
+
+  }
+/* ----------------- Discover Page ------------- */
   .discover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "lsb main main";
@@ -26,10 +32,10 @@
     font-size: 2.5em;
   }
 
-  .overlay::after {
+  /* .overlay::after {
     font-size: 2rem;
     content: "Large";
-  }
+  } */
 
   .spotlight-cont {
     display: grid;

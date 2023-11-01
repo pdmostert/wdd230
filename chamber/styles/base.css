@@ -180,14 +180,14 @@ footer h1 {
   left: 30px;
 }
 
-.overlay::after {
+/* .overlay::after {
   content: "Small";
   font-size: 1rem;
   color: white;
   background-color: var(--accent3-color);
   padding: 10px;
   border-radius: 5px;
-}
+} */
 
 .card {
   display: flex;

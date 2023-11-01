@@ -1,8 +1,8 @@
 :root {
   --btn-standard: #b7b7a4;
   --btn-hover: #a17f35;
-  --input-valid: #ade5ad;
-  --input-invalid: #c97878;
+  --input-valid: rgb(173, 229, 173);
+  --input-invalid: rgb(201, 120, 120);
 }
 
 /* ----------------- Form Page------------- */

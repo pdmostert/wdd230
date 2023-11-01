@@ -6,8 +6,9 @@
   header h1 {
     font-size: 2em;
   }
+  /* ----------------- Home Page ------------- */
 
-  main :nth-child(5) {
+  .home :nth-child(5) {
     grid-column-start: 1;
     grid-column-end: -1;
   }
@@ -18,10 +19,10 @@
     font-size: 1.5em;
   }
 
-  .overlay::after {
+  /* .overlay::after {
     font-size: 1.5rem;
     content: "Medium";
-  }
+  } */
 
   .content img:hover {
     opacity: 0.6;
@@ -56,10 +57,4 @@
   #company-info {
     grid-template-columns: 1fr 2fr;
   }
-
-
-
-
-
-
 }
