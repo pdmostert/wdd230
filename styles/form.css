@@ -33,7 +33,7 @@ form input {
 }
 
 form input:required{
-    border-left : 5px solid red;
+    border-left : 5px solid #800000;
 }
 
 #page-rating {
@@ -65,7 +65,7 @@ form input:required{
   display: block;
   padding: 0.5rem;
   border-radius: 4px;
-  color: red;
+  color: #800000;
   width: 12rem;
 }
 
