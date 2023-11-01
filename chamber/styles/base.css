@@ -109,6 +109,13 @@ main {
   padding: 10px 15px 15px 15px;
   border: 1px solid white;
 }
+.left-sidebar main h1,
+footer h1 {
+  font-size: 1rem;
+}
+.left-sidebar section {
+  margin-bottom: 2rem;
+}
 
 .left-sidebar a {
   color: white;
@@ -432,8 +439,8 @@ input:checked + .slider:before {
 }
 
 /* ----------------- Join Page------------- */
-.join >div{
-  margin: 0 auto ;
+.join > div {
+  margin: 0 auto;
 }
 
 .join {
@@ -448,12 +455,11 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-.join form{
+.join form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 25rem;
-
 }
 
 .benefits {
