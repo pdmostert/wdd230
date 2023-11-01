@@ -528,7 +528,7 @@ form label.sbs {
   color: #555;
 }
 
-form input.submitBtn {
+form .submitBtn {
   border: none;
   background-color: var(--accent3-color);
   color: white;
@@ -541,7 +541,7 @@ form input.submitBtn {
   align-self: center;
 }
 
-form input.submitBtn:hover {
+form .submitBtn:hover {
   background-color: var(--primary-color);
 }
 
