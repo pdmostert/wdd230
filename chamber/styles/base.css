@@ -180,8 +180,6 @@ footer h1 {
   left: 30px;
 }
 
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -558,15 +556,19 @@ label.top textarea:focus {
   justify-content: center;
   column-gap: 20px;
   row-gap: 20px;
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
-.directory div{
+.directory div {
   grid-column: 1/-1;
   margin: 0 auto;
 }
+
+.directory a {
+  text-decoration: none;
+}
 /* ----------------- Directory Page Grid View ------------- */
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
@@ -577,43 +579,63 @@ label.top textarea:focus {
   justify-items: center;
 }
 
-
-.grid .card{
+.grid .card {
   margin-bottom: 0.5rem;
   max-width: 20rem;
 }
 
-.grid .card img{
+.grid .card img {
   width: auto;
   height: 60px;
   border-radius: 0;
-  border:1px solid var(--accent3-color);
+  border: 1px solid var(--accent3-color);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 0.2rem;
-
 }
 
 /* ----------------- Directory Page List View ------------- */
 
-.list{
+.list {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
   align-items: center;
   justify-items: center;
-  
 }
-.list section{
+.list section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
   border: 1px solid var(--accent3-color);
   border-radius: 0;
 }
 
-.list img{
+.list section h2{
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list section a{
+  text-decoration: none;
+}
+.list section:nth-child(odd) {
+  background-color: var(--accent2-color);
+  color: white;
+}
+.list section:nth-child(odd) a{
+  color: white;
+}
+.list section:nth-child(even) a{
+  color: black;
+}
+
+.list .card {
+  background: white;
+  box-shadow: none;
+}
+
+.list img {
   display: none;
 }
