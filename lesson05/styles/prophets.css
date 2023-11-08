@@ -50,7 +50,7 @@ section p {
 }
 
 section img {
-  width: 80%;
+  width: 240px;
   height: 100%;
   border: 5px solid rgb(122, 87, 164);
   margin-bottom: 10px;
