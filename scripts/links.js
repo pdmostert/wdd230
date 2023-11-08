@@ -20,7 +20,7 @@ async function getLinks() {
 function displayLinks(weeks) {
   weeks.forEach((week) => {
     let li = document.createElement("li");
-    li.innerHTML = `${week.lesson}: `;
+    li.innerHTML = `Week ${week.lesson}: `;
     let count = 0;
     week.links.forEach((link) => {
       if (count > 0) {
