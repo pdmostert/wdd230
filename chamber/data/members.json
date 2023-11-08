@@ -1,0 +1,81 @@
+{
+    "members": [
+        {
+                "companyName": "Dimension Data",
+                "companyAddress": "Shop 8, Ground Floor, Beacon Bay Crossing, Bonza Bay Road, East London",
+                "companyPhone": "043-702-0700",
+                "website": "https://www.dimensiondata.com/",
+                "logo": {
+                    "imageName": "images/dd.svg",
+                    "imageAlt": "Dimension Data Logo"
+                },
+                "membershipLevel": "Bronze"
+        },
+        {
+                "companyName": "KGI Holdings",
+                "companyAddress": "Block K, S&T Centre, East London IDZ, Sunnyridge, East London",
+                "companyPhone": "043-101-0196",
+                "website": "https://kgiholdings.co.za/",
+                "logo": {
+                    "imageName": "images/kgi-logo.png",
+                    "imageAlt": "KGI Holdings Logo"
+                },
+                "membershipLevel": "Silver"
+        },
+        {
+            "companyName": "Kempston Group",
+            "companyAddress": "69 Old Transkei Rd, Nahoon, East London, 5210",
+            "companyPhone": "043-707-1700",
+            "website": "https://kempston.co.za/",
+            "logo": {
+                "imageName": "images/kempston-group-logo.png",
+                "imageAlt": "Kempston Group Logo"
+            },
+            "membershipLevel": ""
+        },
+        {
+            "companyName": "Ronnies Motors",
+            "companyAddress": "Bonza Bay Rd, Beacon Bay, East London, 5205",
+            "companyPhone": "043-711-8000",
+            "website": "https://www.ronnies.co.za/",
+            "logo": {
+                "imageName": "images/ronnies-motors-logo.png",
+                "imageAlt": "Ronnies Motors Logo"
+            },
+            "membershipLevel": ""
+        },
+        {
+            "companyName": "Da Gama Textiles",
+            "companyAddress": "Riverine, Mdantsane, 5219",
+            "companyPhone": "043-760-1078",
+            "website": "https://www.dagama.co.za/",
+            "logo": {
+                "imageName": "images/da-gama-logo.png",
+                "imageAlt": "Da Gama Textiles Logo"
+            },
+            "membershipLevel": ""
+        },
+        {
+            "companyName": "Brand Innovation (PTY) LTD",
+            "companyAddress": "25 Belvedere Rd, Claremont, Cape Town, 7735",
+            "companyPhone": "0861-111-954",
+            "website": "https://www.brandinnovation.co.za/",
+            "logo": {
+                "imageName": "images/bi-logo.webp",
+                "imageAlt": "Brand Innovation Logo"
+            },
+            "membershipLevel": ""
+        },
+        {
+            "companyName": "Drake Flemmer & Orsmond",
+            "companyAddress": "3050 Quenera Dr, Beacon Bay North, East London, 5205",
+            "companyPhone": "043-722-4210",
+            "website": "https://www.drakefo.co.za/",
+            "logo": {
+                "imageName": "images/DFO.png",
+                "imageAlt": "Drake Flemmer & Orsmond Logo"
+            },
+            "membershipLevel": "Gold"
+        }
+    ]
+}

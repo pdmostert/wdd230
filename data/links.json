@@ -1,0 +1,126 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/combinators.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Peter-Mostert/pen/xxmYPmz",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/Peter-Mostert/pen/xxmYpGy",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Peter-Mostert/pen/QWzByeE?editors=1100",
+                    "title": "Pseudo-classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson03/lazyload.html",
+                    "title": "Lazy Load Images"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Book of Mormon Top 10 Enhanced"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "lesson08/index.html",
+                    "title": "Web Forms"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson05/new-ward-members.json",
+                    "title": "JSON File"
+                },
+                {
+                    "url": "lesson05/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "#",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}

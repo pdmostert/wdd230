@@ -180,14 +180,7 @@ footer h1 {
   left: 30px;
 }
 
-/* .overlay::after {
-  content: "Small";
-  font-size: 1rem;
-  color: white;
-  background-color: var(--accent3-color);
-  padding: 10px;
-  border-radius: 5px;
-} */
+
 
 .card {
   display: flex;
@@ -555,4 +548,72 @@ form label.top input:required:valid {
 form label.top input:focus,
 label.top textarea:focus {
   box-shadow: 5px 5px 10px var(--secondary-color);
+}
+
+/* ----------------- Directory Page ------------- */
+
+.directory {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 0 10px;
+}
+
+.directory div{
+  grid-column: 1/-1;
+  margin: 0 auto;
+}
+/* ----------------- Directory Page Grid View ------------- */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.grid .card{
+  margin-bottom: 0.5rem;
+  max-width: 20rem;
+}
+
+.grid .card img{
+  width: auto;
+  height: 60px;
+  border-radius: 0;
+  border:1px solid var(--accent3-color);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+
+}
+
+/* ----------------- Directory Page List View ------------- */
+
+.list{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+.list section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--accent3-color);
+  border-radius: 0;
+}
+
+.list img{
+  display: none;
 }

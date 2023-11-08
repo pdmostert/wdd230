@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Border-Kei Chamber of Commerce Join Thank You">
+    <meta name="description" content="Border-Kei Chamber of Commerce Website - Directory">
     <meta name="author" content="Peter Mostert">
-    <meta name="keywords" content="Border-Kei, East London, Chamber of Commerce, Thank You, Join">
+    <meta name="keywords" content="Border-Kei, East London, Chamber of Commerce, Directory">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:title" content="Border-Kei Chamber of Commerce">
@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://pdmostert.github.io/wdd230/chamber/images/east-cape.jpg">
     <meta property="og:url" content="https://pdmostert.github.io/wdd230/chamber/">
 
-    <title>Border-Kei Chamber of Commerce</title>
+    <title>Border-Kei Chamber of Commerce - Directory</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -33,39 +33,22 @@
     </header>
     <nav>
         <a id="menu" href="#" title="Menu"></a>
-        <!-- <button onclick="DarkMode()">Dark Mode</button> -->
         <ul class="navigation">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="discover.html" class="nav-link">Discover</a></li>
-            <li><a href="#" class="nav-link">Directory</a></li>
             <li><a href="directory.html" class="nav-link">Directory</a></li>
             <li><a href="join.html" class="nav-link">Join</a></li>
         </ul>
     </nav>
     <!-- main>div.hero-box+section*5>figure+h2+p -->
 
-    <main class="thankyou">
-        <section class="card">
-            <h3>Thank You for Your Successful Submission!</h3>
-            <p>Dear Applicant</p>
-            <p>On behalf of the Border-Kei Chamber of Commerce, we extend our heartfelt gratitude for your successful
-                submission. Your
-                contribution is invaluable to us, and we appreciate the time, effort, and dedication you have put into
-                your submission.</p>
-            <p>At the Border-Kei Chamber of Commerce, we are dedicated to fostering growth, innovation, and
-                collaboration within our
-                community. Your active participation plays a significant role in achieving these goals, and we are
-                thrilled to have you
-                on board.</p>
-            <p>Thank you once again for your commitment to excellence. We look forward to the positive impact your
-                submission will make
-                and the opportunities it will create for our community. If you have any further questions or require
-                additional
-                assistance, please do not hesitate to contact us.</p>
-            <p>Warm regards</p>
-            <p></p>
-            <p>Border-Kei Chamber of Commerce</p>
-        </section>
+    <main class="directory">
+    <div>
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+    </div>
+    <article id="member-list">
+    </article>
     </main>
     <footer>
         <div id="company-info">
@@ -90,7 +73,8 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/utils.js"></script>
-    <script src="scripts/timestamp.js"></script>
+    <script src="scripts/directory.js"></script>
+
 </body>
 
 </html>
