@@ -582,6 +582,10 @@ label.top textarea:focus {
   align-items: center;
   justify-items: center;
 }
+.grid h2 {
+  text-align: center;
+  grid-column: 1/-1;
+}
 
 .grid .card {
   margin-bottom: 0.5rem;
