@@ -1,8 +1,7 @@
-
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
@@ -10,24 +9,23 @@ Fonts are separated by a & */
   --secondary-color: #245c87;
   --accent1-color: #813e64;
   --accent2-color: #575757;
-  --accent3-color: #2C2C2C;
+  --accent3-color: #2c2c2c;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Oswald", serif, sans-serif;
   --paragraph-font: "IBM Plex Serif", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #2C2C2C;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #245c87; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #245c87 ;
+  --headline-color-on-white: #2c2c2c; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #245c87; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #245c87;
   --nav-link-color: white;
-  --nav-background-color: #2C2C2C;
+  --nav-background-color: #2c2c2c;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #7F807F;
+  --nav-hover-background-color: #7f807f;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -43,7 +41,12 @@ img {
   margin: 0 auto;
   max-width: 300px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -61,12 +64,20 @@ header {
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+
+header p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-color);
+  padding: 1em;
+}
+
+header > h1,
+header > h2 {
   color: var(--headline-color-on-color);
 }
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+  color: #245c87;
   padding: 1em;
 }
 .colors {
@@ -78,7 +89,7 @@ p {
 .colors th {
   background-color: #999;
 }
-.colors td{
+.colors td {
   width: 20%;
   height: 3em;
 }
@@ -94,12 +105,12 @@ p {
   color: white;
   background-color: var(--accent1-color);
 }
-.accent2{
+.accent2 {
   color: white;
   background-color: var(--accent2-color);
 }
 .accent3 {
-    color: white;
+  color: white;
   background-color: var(--accent3-color);
 }
 p.colored {
@@ -112,24 +123,24 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+nav {
   list-style-type: none;
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
 }
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-
 
 .top {
   grid-area: top;

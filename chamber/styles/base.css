@@ -257,6 +257,12 @@ footer h1 {
   padding: 10px 0 10px 0;
 }
 
+.card figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card figure img {
   width: 100%;
   height: auto;

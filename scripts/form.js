@@ -22,10 +22,10 @@ function validateEmail() {
   var email = document.getElementById("email-input").value;
   var pattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
   if (pattern.test(email)) {
-    email.style.backgroundColor = "var(--input-valid)";
+    // email.classList.add("invalid");
   } else {
     message.innerHTML =
       "Invalid BYUI email address. Please enter a valid BYUI email address.";
-    email.style.backgroundColor = "var(--input-invalid)";
+    // email.classList.add("invalid");
   }
 }

@@ -54,9 +54,9 @@ header h1 {
   grid-column: 2/-2;
 }
 
-.hero picture {
+/* .hero picture {
   width: 100%;
-}
+} */
 .hero img {
   width: 100%;
   height: auto;
@@ -167,6 +167,13 @@ iframe {
   border-radius: 10px 10px 0 0;
   padding: 10px 0 10px 0;
 }
+
+.card figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   background-color: #b7b7a4;
   color: black;
