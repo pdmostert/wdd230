@@ -94,6 +94,59 @@ main {
   row-gap: 20px;
 }
 
+#weather-icon {
+  width: 64px;
+  height: 64px;
+  align-self: center;
+}
+.card figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#forecast {
+  display: block;
+}
+.day {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.day h3 {
+  text-align: center;
+  font-size: 0.9rem;
+  min-width: 4rem;
+}
+
+.day img {
+  width: 50px;
+  height: auto;
+}
+
+#chamberBanner {
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--accent3-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border: 5px solid var(--primary-color);
+}
+#chamberBanner .chamberBannerClose {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* ----------------- Discover Page ------------- */
 
 .discover {
@@ -193,7 +246,7 @@ footer h1 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
 }
 
-.card > h3 {
+.card > h2 {
   font-size: 1.5rem;
   width: 100%;
   margin: 0;
@@ -204,7 +257,7 @@ footer h1 {
   padding: 10px 0 10px 0;
 }
 
-.card img {
+.card figure img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -355,6 +408,7 @@ button {
   /* color: white; */
 }
 
+
 .darkmode-label {
   position: absolute;
   top: 5px;
@@ -442,9 +496,6 @@ input:checked + .slider:before {
   align-items: start;
   padding: 0 2rem;
 }
-.join h2 {
-  text-align: center;
-}
 
 .join form {
   display: flex;
@@ -477,7 +528,7 @@ form fieldset {
   margin: 2rem 0;
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
-  padding: 0.5rem 2%;
+  padding: 0.5rem 1.5rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
   background-color: white;
   width: 100%;
@@ -559,8 +610,11 @@ label.top textarea:focus {
   margin: 0 auto;
 }
 
-.directory h2 {
+.directory h2, .join h2 {
   text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 1rem;
 }
 
 .directory div {
@@ -620,22 +674,22 @@ label.top textarea:focus {
   border-radius: 0;
 }
 
-.list section h2{
+.list section h2 {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-.list section a{
+.list section a {
   text-decoration: none;
 }
 .list section:nth-child(odd) {
   background-color: var(--accent2-color);
   color: white;
 }
-.list section:nth-child(odd) a{
+.list section:nth-child(odd) a {
   color: white;
 }
-.list section:nth-child(even) a{
+.list section:nth-child(even) a {
   color: black;
 }
 

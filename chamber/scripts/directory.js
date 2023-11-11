@@ -21,7 +21,7 @@ async function getMembers() {
 function displayMembers(members) {
   members.members.forEach((member) => {
     let section = document.createElement("section");
-    let companyName = document.createElement("h2");
+    let companyName = document.createElement("h3");
     let companyAddress = document.createElement("p");
     let companyPhone = document.createElement("p");
     let companyWebsite = document.createElement("a");

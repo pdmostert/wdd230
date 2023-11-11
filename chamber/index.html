@@ -43,6 +43,13 @@
     </nav>
     <!-- main>div.hero-box+section*5>figure+h2+p -->
 
+    <!-- Banner Section -->
+    <div id="chamberBanner">
+        <span id="bannerContent">Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</span>
+        <button type="submit" class="chamberBannerClose">×</button>
+    </div>
+
+
     <main class="home">
         <div class="hero-box">
             <picture>
@@ -54,7 +61,7 @@
             <div class="overlay"></div>
         </div>
         <section class="card">
-            <h3>Current Events</h3>
+            <h2>Current Events</h2>
             <figure><img src="images/current-event.webp" alt="image" width="361" height="359"> </figure>
             <p>Good afternoon Members, the Agriculture Committee of the Chamber invites you to attend the inaugural
                 Organic Food Market happening next week Saturday, 14th October, as per the details in the advert below.
@@ -62,7 +69,7 @@
                 stall, please call 0828723150. Thank you.</p>
         </section>
         <section class="card">
-            <h3>Call to Action</h3>
+            <h2>Call to Action</h2>
             <figure><img src="images/call-two-action.webp" alt="image" width="361" height="139"> </figure>
             <p><strong>Coke Cleans E.L Beachfront</strong></p>
             <p>Posted on September 18, 2017 by Yanga Ziwele</p>
@@ -75,15 +82,22 @@
                 far as the Orient theatre.</p>
         </section>
         <section class="card">
-            <h3>Weather</h3>
-            <figure><img src="images/partly-cloudy.webp" alt="image" width="64" height="64"> </figure>
-            <p>Temperature: <span id="temperature">25</span> °C</p>
-            <p>Wind Speed: <span id="wind-speed">3</span> km/h</p>
-            <p>Wind Chill: <span id="wind-chill"></span> °C</p>
+            <h2>Weather</h2>
+            <figure><img id="weather-icon" src="images/partly-cloudy.webp" alt="image" width="64" height="64">
+                <figcaption id="weather-desc"></figcaption>
+            </figure>
+            <p>Temperature: <span id="temperature"></span> °C</p>
+            <p>Humidity: <span id="current-humidity"></span></p>
+            <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
+            <h4>3 Day Forecast</h4>
+            <div id="forecast">
+
+            </div>
 
         </section>
         <section class="card spotlight-cont">
-            <h3>Member Spotlight</h3>
+            <h2>Member Spotlight</h2>
             <section class="spotlight">
                 <h3>East Coast Electronics</h3>
                 <p>"Connecting Your World"</p>
@@ -124,7 +138,9 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/utils.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
