@@ -35,6 +35,8 @@ function displayWeather(data) {
   icon.src =
     "https://openweathermap.org/img/w/" + day0.weather[0].icon + ".png";
   icon.alt = day0.weather[0].description;
+  icon.width = "64";
+  icon.height = "64";
   figcap.innerHTML = titleCase(day0.weather[0].description);
   windchill.innerHTML = CalculateWindChill(
     temperature.textContent,
@@ -59,8 +61,8 @@ function displayForcast(data) {
       `https://openweathermap.org/img/w/${element.weather[0].icon}.png`
     );
     icon.setAttribute("alt", element.weather[0].description);
-    icon.setAttribute("width", "16");
-    icon.setAttribute("height", "16");
+    icon.setAttribute("width", "64");
+    icon.setAttribute("height", "64");
     const temp = document.createElement("p");
     temp.innerHTML = Math.round(element.main.temp) + "°C";
     const desc = document.createElement("p");

@@ -95,8 +95,8 @@ main {
 }
 
 #weather-icon {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   align-self: center;
 }
 .card figure {
@@ -257,7 +257,7 @@ footer h1 {
   padding: 10px 0 10px 0;
 }
 
-.card figure{
+.card figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -413,7 +413,6 @@ button {
   background-color: black;
   /* color: white; */
 }
-
 
 .darkmode-label {
   position: absolute;
@@ -616,7 +615,8 @@ label.top textarea:focus {
   margin: 0 auto;
 }
 
-.directory h2, .join h2 {
+.directory h2,
+.join h2 {
   text-align: center;
   background-color: white;
   border-radius: 10px;
