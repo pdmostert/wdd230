@@ -8,7 +8,7 @@ async function getMembers() {
     const response = await fetch(linksURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       displayMembers(data);
     } else {
       throw Error(await response.statusText);
