@@ -5,14 +5,20 @@
 
   /* ----------------- Home Page ------------- */
 
-  .home {
 
-  }
 /* ----------------- Discover Page ------------- */
   .discover {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "lsb main main";
+    grid-template-areas: 
+    "header header header"
+    "lsb main main";
   }
+
+  .discover  > h1 {
+  grid-area: header;
+  }
+
+
 
   .left-sidebar {
     grid-area: lsb;
