@@ -1,4 +1,3 @@
-const baseUrl = "https://pdmostert.github.io/wdd230/";
 const linksURL = "https://pdmostert.github.io/wdd230/data/links.json";
 // const linksURL = "data/links.json";
 
