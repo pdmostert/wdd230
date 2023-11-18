@@ -36,6 +36,8 @@ function displayMembers(members) {
     companyWebsite.setAttribute("target", "_blank");
     logo.setAttribute("src", member.logo.imageName);
     logo.setAttribute("alt", member.logo.imageAlt);
+    logo.setAttribute("width", 172);
+    logo.setAttribute("height", 68);
 
     section.appendChild(companyName);
     section.appendChild(companyAddress);

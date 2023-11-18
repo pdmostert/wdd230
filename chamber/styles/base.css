@@ -37,6 +37,7 @@ header {
   font-weight: 700;
   width: 100%;
   min-height: 5rem;
+  height: 9rem;
 }
 header h1 {
   font-size: 1.5em;
@@ -649,7 +650,6 @@ label.top textarea:focus {
   width: 100%;
 }
 
-.directory h2,
 .join h2 {
   text-align: center;
   background-color: white;
@@ -729,13 +729,18 @@ label.top textarea:focus {
 .list section:nth-child(odd) a {
   color: white;
 }
-.list section:nth-child(even) a {
+.list section:nth-child(even) a,
+.list section:nth-child(even) h2 {
   color: black;
 }
 
 .list .card {
   background: white;
   box-shadow: none;
+}
+
+.list > .card h2 {
+  background-color: transparent;
 }
 
 .list img {
