@@ -646,6 +646,16 @@ label.top textarea:focus {
   margin: 0 auto;
 }
 
+.directory .card a{
+  padding: 15px;
+}
+
+#member-list > h2 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
 .directory div:first-child {
   width: 100%;
 }
