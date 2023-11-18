@@ -19,7 +19,7 @@
             "website": "https://kgiholdings.co.za/",
             "slogan": "We connect The world",
             "logo": {
-                "imageName": "images/kgi-logo.png",
+                "imageName": "images/kgi-logo.webp",
                 "imageAlt": "KGI Holdings Logo"
             },
             "membershipLevel": "Silver"
@@ -31,7 +31,7 @@
             "website": "https://kempston.co.za/",
             "slogan": "You Ring we Bring",
             "logo": {
-                "imageName": "images/kempston-group-logo.png",
+                "imageName": "images/kempston-group-logo.webp",
                 "imageAlt": "Kempston Group Logo"
             },
             "membershipLevel": "Gold"
@@ -43,7 +43,7 @@
             "website": "https://www.ronnies.co.za/",
             "slogan": "Sheer Driving Pleasure",
             "logo": {
-                "imageName": "images/ronnies-motors-logo.png",
+                "imageName": "images/ronnies-motors-logo.webp",
                 "imageAlt": "Ronnies Motors Logo"
             },
             "membershipLevel": "Silver"
@@ -55,7 +55,7 @@
             "website": "https://www.dagama.co.za/",
             "slogan": "Where Comfort Meets Style",
             "logo": {
-                "imageName": "images/da-gama-logo.png",
+                "imageName": "images/da-gama-logo.webp",
                 "imageAlt": "Da Gama Textiles Logo"
             },
             "membershipLevel": "Gold"
@@ -79,7 +79,7 @@
             "website": "https://www.drakefo.co.za/",
             "slogan": "To Legit to Quit",
             "logo": {
-                "imageName": "images/DFO.png",
+                "imageName": "images/DFO.webp",
                 "imageAlt": "Drake Flemmer & Orsmond Logo"
             },
             "membershipLevel": "Gold"
