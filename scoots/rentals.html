@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Rentals - Rentals</title>
+    <meta name="description" content="Scoots, Scooter Rentals">
+    <meta name="keywords" content="Scoots, Scooter Rentals, Cozumel, Playa del Carmen, Terminal Puerta Maya">
+    <meta name="author" content="Peter Mostert">
+
+    <meta property="og:title" content="~Scoots~ - Scooter rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://petermostert.github.io/wdd230/scoots/images/hero_400.webp">
+    <meta property="og:url" content="https://petermostert.github.io/wdd230/scoots">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="Logo Image" width="319" height="314">
+        <h1>Scoots Rentals - Cozumel</h1>
+    </header>
+    <nav>
+        <a id="menu" href="#" aria-label="Menu"></a>
+        <ul class="navigation">
+            <li><a  href="index.html">Home</a></li>
+            <li><a  class="active" href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 412px)" srcset="images/hero_400.webp">
+                <source media="(max-width: 800px)" srcset="images/hero_800.webp">
+                <img src="images/hero_1200.webp" alt="Scoots Rentals" width="1500" height="750">
+            </picture>
+            <div class="herolable">
+                <a href="rentals.html" class="button">Rent a Scooter Now!</a>
+            </div>
+        </div>
+
+        <h2>Scoots – Rental Options</h2>
+ 
+
+    </main>
+    <footer>
+        <div id="company-info">
+            <!-- <img class="logo" src="images/logo.svg" alt="Logo Image" width="319" height="314"> -->
+            <h3>Scoots Rentals - Cozumel</h3>
+            <p>rentals@scoots.com</p>
+            <p>Phone: +52 987 869 2181</p>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div id="developer">
+            <p>&copy;2023</p>
+            <p>Peter Mostert</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <a href="attributions.html" target="_blank">Attributions</a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

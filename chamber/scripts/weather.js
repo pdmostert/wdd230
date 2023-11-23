@@ -18,7 +18,7 @@ async function getWeather() {
       const weather = await response.json();
       // console.log(weather);
       displayWeather(weather);
-      displayForcast(weather);
+      displayForecast(weather);
     } else {
       throw Error(await response.statusText);
     }
@@ -44,7 +44,7 @@ function displayWeather(data) {
   );
 }
 
-function displayForcast(data) {
+function displayForecast(data) {
   const threedays = [];
   threedays.push(data.list[8]);
   threedays.push(data.list[16]);

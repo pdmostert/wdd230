@@ -1,0 +1,38 @@
+@media screen and (min-width: 650px) {
+  /* ----------------- Global ------------- */
+
+  /* ----------------- Header ------------- */
+
+  /* ----------------- Footer ------------- */
+
+  #developer {
+    display: block;
+  }
+  /* ----------------- Navigation ------------- */
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+
+  /* ----------------- Menu ------------- */
+
+  #menu {
+    display: none;
+  }
+
+  /* ----------------- Home Page ------------- */
+
+  /* ----------------- Rentals Page ------------- */
+
+  /* ----------------- Reservations Page ------------- */
+
+  /* ----------------- Contact Us Page ------------- */
+}

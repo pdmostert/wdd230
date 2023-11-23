@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Rentals - Home</title>
+    <meta name="description" content="Scoots, Scooter Rentals">
+    <meta name="keywords" content="Scoots, Scooter Rentals, Cozumel, Playa del Carmen, Terminal Puerta Maya">
+    <meta name="author" content="Peter Mostert">
+
+    <meta property="og:title" content="~Scoots~ - Scooter rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://petermostert.github.io/wdd230/scoots/images/hero_400.webp">
+    <meta property="og:url" content="https://petermostert.github.io/wdd230/scoots">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="Logo Image" width="319" height="314">
+        <h1>Scoots Rentals - Cozumel</h1>
+    </header>
+    <nav>
+        <a id="menu" href="#" aria-label="Menu"></a>
+        <ul class="navigation">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 412px)" srcset="images/hero_400.webp">
+                <source media="(max-width: 800px)" srcset="images/hero_800.webp">
+                <img src="images/hero_1200.webp" alt="Scoots Rentals" width="1500" height="750">
+            </picture>
+            <div class="herolable">
+                <a href="rentals.html" class="button">Rent a Scooter Now!</a>
+            </div>
+        </div>
+
+        <h2>Welcome to Scoots – Your Passport to Island Adventure!</h2>
+        <section>
+            <h3>🌴 Explore Cozumel with Fun and Freedom! 🛵</h3>
+            <p>Embark on an unforgettable journey with Scoots, your premier motor scooter rental company nestled on the
+                captivating island of Cozumel in the western Caribbean Sea. Discover the essence of carefree exploration
+                as we cater
+                to locals, spontaneous tourists, motor scooter enthusiasts, and even cruise-based touring groups.</p>
+        </section>
+        <section>
+            <h3>Why Choose Scoots:</h3>
+            <h4>🚀 Easy and Friendly Rentals:</h4>
+            <ul>
+                <li>
+                    Seamlessly rent motor scooters, jeeps, and side-by-sides ATVs with a smile.
+                    We have a wide range of vehicles to suit your needs. From 1 to 5 people, we have you covered.
+                    We have half day and full day rates and we accept "Walk-in" customers.
+                    We even have a convenient online reservation system and a drop off service.
+                </li>
+            </ul>
+            <h4>
+                📍 Convenient Locations:
+            </h4>
+            <ul>
+                <li>
+                    Two prime locations – one near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel, and
+                    the other near Terminal Puerta Maya, perfect for cruise enthusiasts.
+                </li>
+            </ul>
+            <h4>
+                🌊 Escape the Ordinary:
+            </h4>
+            <ul>
+                <li>
+                    Leave the touristy west behind and embrace the freedom to explore the unspoiled beauty of Cozumel's
+                    southern and eastern shores.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cozumel Weather</h2>
+            <div id="weather">
+                <section id="current">
+                    <h3>Current:</h3>
+                    <p id="currentTemp"></p>
+                    <p id="currentHumidity"></p>
+                    <figure>
+                        <img id="currentIcon" src="#" alt="">
+                        <figcaption id="currentDesc"></figcaption>
+                    </figure>
+                </section>
+                <div id="forecast">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Office Locations</h2>
+            <div class="grid">
+                <section class="office">
+                    <h3>Terminal Puerta Maya</h3>
+                    <p>Carretera a Chankanaab km 4.5, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    <p>Open 8am to 5pm</p>
+                    <p>Phone: +52 987 869 2181</p>
+                </section>
+                <section class="office">
+                    <h3>Ferry to Playa del Carmen</h3>
+                    <p>Av. Rafael E. Melgar 1, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    <p>Open 8am to 5pm</p>
+                    <p>Phone: +52 987 869 2181</p>
+                </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <div id="company-info">
+            <!-- <img class="logo" src="images/logo.svg" alt="Logo Image" width="319" height="314"> -->
+            <h3>Scoots Rentals - Cozumel</h3>
+            <p>rentals@scoots.com</p>
+            <p>Phone: +52 987 869 2181</p>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div id="developer">
+            <p>&copy;2023</p>
+            <p>Peter Mostert</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <a href="attributions.html" target="_blank">Attributions</a>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

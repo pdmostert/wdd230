@@ -1,0 +1,158 @@
+{
+    "scooters": [
+        {
+            "rental": [
+                {
+                    "type": "Scooter",
+                    "description": "Honda Metropolitan(49cc)",
+                    "capacity": "1 Person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "20$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "30$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "25$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "25$"
+                        }
+                    ]
+                },
+                {
+                    "type": "Scooter",
+                    "description": "Honda Dio (110cc)",
+                    "capacity": "2 person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "30$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "40$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "35$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "45$"
+                        }
+                    ]
+                },
+                {
+                    "type": "Scooter",
+                    "description": "Honda PCX150 (149cc)",
+                    "capacity": "2 person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "40$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "50$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "45$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "55$"
+                        }
+                    ]
+                },
+                {
+                    "type": "ATVs",
+                    "description": "Honda Pioneer 1000",
+                    "capacity": "4 person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "50$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "70$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "60$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "80$"
+                        }
+                    ]
+                },
+                {
+                    "type": "Jeeps",
+                    "description": "Jeep Wrangler - 4 door manuel with A/C)",
+                    "capacity": "5 person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "70$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "100$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "85$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "125$"
+                        }
+                    ]
+                },
+                {
+                    "type": "Jeeps",
+                    "description": "Jeep Wrangler - 2 door - open air - manuel",
+                    "capacity": "4 person",
+                    "reservation": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "60$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "85$"
+                        }
+                    ],
+                    "walkIn": [
+                        {
+                            "description": "Half Day (3 hrs)",
+                            "price": "70$"
+                        },
+                        {
+                            "description": "Full Day",
+                            "price": "90$"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
