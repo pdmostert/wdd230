@@ -23,6 +23,7 @@ main {
   min-width: none;
   box-sizing: border-box;
   padding-bottom: 1rem;
+  margin: 0 auto;
 }
 main h2 {
   text-align: center;
@@ -37,15 +38,14 @@ main h2 {
   height: 100px;
 }
 
-.maps{
+.maps {
   box-sizing: border-box;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-justify-content: space-around;
-align-items: center;
-column-gap: 1rem;
-row-gap: 1rem;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 iframe {
   box-sizing: border-box;
@@ -68,7 +68,7 @@ iframe {
 section {
   margin: 1rem 1rem;
   padding: 1rem;
-  box-shadow: #113946 0px 0px 10px;
+  box-shadow: #113946 0px 0px 14px 5px;
   background-color: var(--accent1-color);
 }
 
@@ -170,13 +170,12 @@ nav ul {
 
 /* ----------------- Menu ------------- */
 
-
 #menu {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
-  padding: .6rem 1.0rem;
+  padding: 0.6rem 1rem;
   border: 0.5px solid var(--accent3-color);
   color: var(--accent3-color);
   position: absolute;
@@ -185,15 +184,12 @@ nav ul {
 }
 #menu:hover {
   background-color: var(--accent2-color);
-  /* border-radius: 10%; */
 }
 
-/* Show hamburger for menu*/
 #menu::before {
   content: "≡";
 }
 
-/* show x when menu is active */
 #menu.show::before {
   content: "X";
 }
@@ -203,27 +199,72 @@ nav ul {
   margin: 0 auto;
 }
 
-/* hide the navigation by default mobile view */
 .navigation li {
   display: none;
 }
-/* show the navigation when the menu is checked */
+
 .show li {
   display: block;
 }
 
-/* button {
-  background-color: var(--accent3-color);
-  color: white;
-  border: 1px solid var(--accent3-color);
-  border-radius: 5px;
-  padding: 5px;
-  margin: 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-} */
+/* ----------------- Table ------------- */
+.rental-table-box{
+padding: 1rem;
+}
 
+table caption{
+  padding-bottom: 1rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--accent1-color);
+  box-shadow: #113946 0px 0px 14px 5px;
+}
+
+table thead {
+  background-color: black;
+  color: white;
+}
+table tr:nth-child(3) th:nth-child(2),
+table tr:nth-child(3) th:nth-child(3),
+table tr:nth-child(2) th:nth-child(2),
+table tr:nth-child(2) th:nth-child(3) {
+  display: none;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+  display: none;
+}
+
+table th {
+  border: 1px solid var(--accent3-color);
+  padding: 8px;
+}
+
+table td {
+  border: 1px solid var(--accent3-color);
+  padding: 8px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--accent2-color);
+}
+table img {
+  width: 60px;
+  height: auto;
+  border-radius: 15%;
+  border: #113946 3px solid;
+  margin: 10px;
+}
 
 /* ----------------- Weather ------------- */
 
@@ -255,7 +296,10 @@ nav ul {
   width: 100%;
 }
 
-.home .hero img {
+.home .hero img,
+.rentals .hero img,
+.reservations .hero img,
+.contact .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;

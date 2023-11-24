@@ -28,6 +28,25 @@
     display: none;
   }
 
+
+  /* ----------------- Table ------------- */
+table tr:nth-child(3) th:nth-child(2), 
+table tr:nth-child(3) th:nth-child(3), 
+table tr:nth-child(2) th:nth-child(2),
+table tr:nth-child(2) th:nth-child(3) 
+{
+  display:table-cell;
+}
+
+table td:nth-child(2),table td:nth-child(3) {
+display:table-cell;
+}
+
+  table img:hover {
+  transform: scale(2);
+  transition-duration: 15ms;
+}
+
   /* ----------------- Home Page ------------- */
 
   /* ----------------- Rentals Page ------------- */
