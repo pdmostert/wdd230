@@ -37,9 +37,9 @@
     <main class="contact">
         <div class="hero">
             <picture>
-                <source media="(max-width: 412px)" srcset="images/hero_400.webp">
-                <source media="(max-width: 800px)" srcset="images/hero_800.webp">
-                <img src="images/hero_1200.webp" alt="Scoots Rentals" width="1500" height="750">
+                <source media="(max-width: 412px)" srcset="images/hero_400c.webp">
+                <source media="(max-width: 800px)" srcset="images/hero_800c.webp">
+                <img src="images/hero_1200c.webp" alt="Scoots Rentals" width="1500" height="750">
             </picture>
             <div class="herolable">
                 <a href="rentals.html" class="button">Rent a Scooter Now!</a>
@@ -47,7 +47,23 @@
         </div>
 
         <h2>Scoots – Talk to Us</h2>
-        
+        <section>
+            <h2>Office Locations</h2>
+            <div class="grid">
+                <section class="office">
+                    <h3>Terminal Puerta Maya</h3>
+                    <p>Carretera a Chankanaab km 4.5, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    <p>Open 8am to 5pm</p>
+                    <p>Phone: +52 987 869 2181</p>
+                </section>
+                <section class="office">
+                    <h3>Ferry to Playa del Carmen</h3>
+                    <p>Av. Rafael E. Melgar 1, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    <p>Open 8am to 5pm</p>
+                    <p>Phone: +52 987 869 2181</p>
+                </section>
+        </section>
+
         <section>
             <h2>Maps</h2>
             <div class="maps">
@@ -58,10 +74,36 @@
                 </iframe>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.872183561304!2d-86.95162035811948!3d20.51146529328661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sza!4v1700628670487!5m2!1sen!2sza"
-                    title="Office - Ferry to Playa del Carmen" width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    title="Office - Ferry to Playa del Carmen" width="600" height="450" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+        </section>
+
+        <section>
+            <h2>Contact Us Form</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top required"> Full Name*
+                        <input type="text" name="fullname" required id="fullname">
+                    </label>
+                    <label class="top required"> Email*
+                        <input type="email" name="email" required id="email">
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label class="top">Comments
+                        <textarea name="description" id="description" rows="5"></textarea>
+                    </label>
+                </fieldset>
+                <div id="contactBtn">
+                    <button type="submit" class="submitBtn">Send Request</button>
+                </div>
+            </form>
+
         </section>
 
     </main>
@@ -87,7 +129,7 @@
         </div>
     </footer>
     <script src="scripts/menu.js"></script>
-        <script src="scripts/moddate.js"></script>
+    <script src="scripts/moddate.js"></script>
 </body>
 
 </html>

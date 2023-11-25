@@ -28,30 +28,36 @@
     display: none;
   }
 
-
   /* ----------------- Table ------------- */
-table tr:nth-child(3) th:nth-child(2), 
-table tr:nth-child(3) th:nth-child(3), 
-table tr:nth-child(2) th:nth-child(2),
-table tr:nth-child(2) th:nth-child(3) 
-{
-  display:table-cell;
-}
+  table tr:nth-child(3) th:nth-child(2),
+  table tr:nth-child(3) th:nth-child(3),
+  table tr:nth-child(2) th:nth-child(2),
+  table tr:nth-child(2) th:nth-child(3) {
+    display: table-cell;
+  }
 
-table td:nth-child(2),table td:nth-child(3) {
-display:table-cell;
-}
+  table td:nth-child(2),
+  table td:nth-child(3) {
+    display: table-cell;
+  }
 
   table img:hover {
-  transform: scale(2);
-  transition-duration: 15ms;
-}
+    transform: scale(2);
+    transition-duration: 15ms;
+  }
 
-  /* ----------------- Home Page ------------- */
+  /* ----------------- Forms ------------- */
 
-  /* ----------------- Rentals Page ------------- */
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  /* ----------------- Reservations Page ------------- */
+    /* ----------------- Home Page ------------- */
 
-  /* ----------------- Contact Us Page ------------- */
+    /* ----------------- Rentals Page ------------- */
+
+    /* ----------------- Reservations Page ------------- */
+
+    /* ----------------- Contact Us Page ------------- */
+  }
 }

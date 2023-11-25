@@ -37,9 +37,9 @@
     <main class="reservations">
         <div class="hero">
             <picture>
-                <source media="(max-width: 412px)" srcset="images/hero_400.webp">
-                <source media="(max-width: 800px)" srcset="images/hero_800.webp">
-                <img src="images/hero_1200.webp" alt="Scoots Rentals" width="1500" height="750">
+                <source media="(max-width: 412px)" srcset="images/hero_400b.webp">
+                <source media="(max-width: 800px)" srcset="images/hero_800b.webp">
+                <img src="images/hero_1200b.webp" alt="Scoots Rentals" width="1500" height="750">
             </picture>
             <div class="herolable">
                 <a href="rentals.html" class="button">Rent a Scooter Now!</a>
@@ -47,6 +47,94 @@
         </div>
 
         <h2>Scoots – Make Your Reservation</h2>
+
+        <div class="container">
+            <article>
+                <h3>Terms and Conditions</h3>
+                <p>By submitting this form you agree to the following Rental Services and Agreements:</p>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </article>
+            <div id="form-section">
+                <h3>Reserve Your Scooter Now!</h3>
+                <p>Fill out the form below to reserve your scooter. We will contact you to confirm your reservation.</p>
+                <form action="thankyou.html" method="get">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label class="top ">Name:
+                            <input type="text" name="name" id="name" required>
+                        </label>
+
+                        <label class="top ">Email:
+                            <input type="email" name="email" id="email" required>
+                        </label>
+
+                        <label class="top ">Phone:
+                            <input type="tel" name="phone" id="phone" required>
+                        </label>
+
+                        <label class="top ">Home State:
+                            <input type="text" name="state" id="state" placeholder="State" required>
+                        </label>
+
+                        <label class="top ">Country:
+                            <input type="text" name="country" id="country" placeholder="Country" required>
+                        </label>
+                        <label class="top ">Hotel or Airbnb:
+                            <input type="text" name="hotel" id="hotel" placeholder="Hotel or Airbnb">
+                        </label>
+                        <label class="top ">Cruise Line:
+                            <input type="text" name="cruise" id="cruise" placeholder="Cruise Line">
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rental Information</legend>
+                        <label class="top ">Date:
+                            <input type="date" name="pickup" id="pickup" required>
+                        </label>
+
+                        <div>Period:</div>
+                        <label class="sbs"><input type="radio" name="period" value="halfday"> Half Day (3 hrs)</label>
+                        <label class="sbs"><input type="radio" name="period" value="fullday"> Full Day</label>
+
+                        <label class="top">Scooter:
+                            <select name="scooter" id="scooter" required>
+                                <option value="">Please Select</option>
+                            </select>
+                        </label>
+
+                        <label class="top">Number of Scooters:
+                            <input type="number" name="quantity" id="quantity" min="1" max="10" value="1" required>
+                        </label>
+
+                        <div>Drop-Off Required:</div>
+                        <label class="sbs"><input type="radio" name="dropoff" value="no"> No</label>
+                        <label class="sbs"><input type="radio" name="dropoff" value="yes"> Yes</label>
+
+
+
+                        <label class="top">Drop-Off Location & Comments:
+                            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                        </label>
+                    </fieldset>
+                    <div id="contactBtn">
+                        <button type="submit" class="submitBtn">Make Reservation</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
 
 
     </main>
@@ -72,7 +160,8 @@
         </div>
     </footer>
     <script src="scripts/menu.js"></script>
-        <script src="scripts/moddate.js"></script>
+    <script src="scripts/moddate.js"></script>
+    <script src="scripts/reservations.js"></script>
 </body>
 
 </html>

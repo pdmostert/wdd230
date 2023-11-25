@@ -12,6 +12,7 @@
 
 body {
   font-family: var(--paragraph-font);
+  font-size: 1.5rem;
   padding: 0;
   margin: auto;
   min-width: 380px;
@@ -65,11 +66,16 @@ iframe {
   text-align: center;
 }
 
-section {
+section, article, .reservations #form-section {
   margin: 1rem 1rem;
   padding: 1rem;
   box-shadow: #113946 0px 0px 14px 5px;
   background-color: var(--accent1-color);
+}
+
+.container {
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* ----------------- Header ------------- */
@@ -266,6 +272,82 @@ table img {
   margin: 10px;
 }
 
+/* ----------------- Forms ------------- */
+
+.contact form{
+display:grid;
+grid-template-columns: 1fr ;
+
+column-gap: 1rem;
+row-gap: 1rem;
+}
+
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid var(--accent3-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend{
+    color: var(--accent3-color);
+    margin: 0 1rem;
+    padding: 0;
+}
+
+form label.top, form div{
+    display: block;
+    margin: 1rem 0;
+    padding-top: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+form label.top input,form label.top select,form label.top textarea{
+  box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color:white;
+}
+
+form label.sbs{
+    display: block;
+    padding: 0.75rem;
+    color: #555;
+}
+
+#contactBtn{
+  display: block;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+form button.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+
+}
+
+form label.top input:required{
+    border-left: red 6px solid;
+}
+form label.top input:required:valid{
+    border-left: green 6px solid;
+}
+
+
 /* ----------------- Weather ------------- */
 
 #weather {
@@ -299,7 +381,8 @@ table img {
 .home .hero img,
 .rentals .hero img,
 .reservations .hero img,
-.contact .hero img {
+.contact .hero img, 
+.thankyou .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -332,7 +415,17 @@ table img {
 }
 
 /* ----------------- Rentals Page ------------- */
+/* ----------------- Contact Us Page ------------- */
 
 /* ----------------- Reservations Page ------------- */
+.reservations li{
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
 
-/* ----------------- Contact Us Page ------------- */
+.reservations li::before{
+  content: "✅ ";
+}
+
