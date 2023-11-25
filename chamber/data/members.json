@@ -84,5 +84,18 @@
             },
             "membershipLevel": "Gold"
         }
+        ,
+        {
+            "companyName": "Red Alert Security & Cleaning ",
+            "companyAddress": "Chester Road, Sunnyridge",
+            "companyPhone": "043-703-4700",
+            "website": "https://redalert.co.za/",
+            "slogan": "LEADERS IN CLEANING AND SECURITY",
+            "logo": {
+                "imageName": "images/red-alert.webp",
+                "imageAlt": "Red Alert Security & Cleaning Logo"
+            },
+            "membershipLevel": "Gold"
+        }
     ]
 }
