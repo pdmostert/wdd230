@@ -41,7 +41,7 @@ header {
 }
 header h1 {
   font-size: 1.5em;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .logo {
@@ -385,12 +385,12 @@ footer div {
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 0.2rem 0.45rem;
+  padding: 0.5rem 0.75rem;
   border: 0.5px solid white;
   color: white;
   position: absolute;
-  top: 2rem;
-  right: 0.8rem;
+  top: 5rem;
+  right: 1rem;
 }
 #menu:hover {
   background-color: var(--accent3-color);
@@ -442,21 +442,22 @@ button {
 
 .darkmode-label {
   position: absolute;
-  top: 5px;
-  right: 50px;
+  top: 10px;
+  right: 80px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  padding: 10px 0;
 }
 
 /* The switch - the box around the slider */
 .switch {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   display: inline-block;
-  width: 30px;
-  height: 17px;
+  width: 60px;
+  height: 40px;
 }
 
 /* Hide default HTML checkbox */
@@ -482,8 +483,8 @@ button {
 .slider:before {
   position: absolute;
   content: "";
-  height: 12px;
-  width: 12px;
+  height: 34px;
+  width: 34px;
   left: 3px;
   bottom: 3px;
   background-color: white;
@@ -500,9 +501,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(12px);
-  -ms-transform: translateX(12px);
-  transform: translateX(12px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 /* Rounded sliders */
@@ -707,6 +708,9 @@ label.top textarea:focus {
 }
 
 /* ----------------- Directory Page List View ------------- */
+#member-list{
+  padding: 0 1rem;
+}
 
 .list {
   display: grid;
@@ -718,7 +722,7 @@ label.top textarea:focus {
 }
 .list section {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 0.5rem;
   border: 1px solid var(--accent3-color);
   border-radius: 0;
