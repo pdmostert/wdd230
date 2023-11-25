@@ -261,6 +261,19 @@ table td {
   padding: 8px;
 }
 
+table thead tr:first-child th {
+  border-bottom: none;
+}
+
+table thead  tr:nth-child(2) th:nth-child(1),
+table thead  tr:nth-child(2) th:nth-child(2),
+table thead  tr:nth-child(2) th:nth-child(3) {
+border: none;
+}
+
+
+
+
 table tbody tr:nth-child(even) {
   background-color: var(--accent2-color);
 }
