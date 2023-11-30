@@ -1,4 +1,5 @@
 /* ----------------- Global ------------- */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap");
 :root {
   --primary-color: #fff2d8;
   --secondary-color: #245c87;
@@ -265,14 +266,11 @@ table thead tr:first-child th {
   border-bottom: none;
 }
 
-table thead  tr:nth-child(2) th:nth-child(1),
-table thead  tr:nth-child(2) th:nth-child(2),
-table thead  tr:nth-child(2) th:nth-child(3) {
-border: none;
+table thead tr:nth-child(2) th:nth-child(1),
+table thead tr:nth-child(2) th:nth-child(2),
+table thead tr:nth-child(2) th:nth-child(3) {
+  border: none;
 }
-
-
-
 
 table tbody tr:nth-child(even) {
   background-color: var(--accent2-color);
